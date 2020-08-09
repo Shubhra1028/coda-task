@@ -9,8 +9,7 @@ class App extends Component{
   }
 
   componentDidMount() {
-    Axios.get('http://starlord.hackerearth.com/recipe').then(response => {
-      console.count()
+    Axios.get('https://cors-anywhere.herokuapp.com/http://starlord.hackerearth.com/recipe').then(response => {
       this.setState({
         recipe: response.data
       })
